@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   horizon:
-    build: .
+    image: ghcr.io/always1ov/horizon:latest
+    # Uncomment the line below to build locally instead of pulling
+    # build: .
     container_name: horizon
     volumes:
       - ./data:/app/data
